@@ -39,7 +39,7 @@ const getWeather = async (city) => {
        city =  e.target.innerHTML; 
        console.log(city)
     
-        // app.style.opacity = "1";
+       
                             nameOfCity.innerHTML = data.city.name
                             tempereture.innerHTML = data.list[0].main.temp +'°';
                             icon.innerHTML = data.list[0].weather[0].icon; 
