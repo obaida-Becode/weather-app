@@ -1,0 +1,126 @@
+body{
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: rgb(12, 12, 250);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+.weather-app{
+  height: 100vh;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  
+}
+
+/* add background overlay */
+
+.weather-app::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0);
+  z-index: 0;
+}
+
+.container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2em ;
+  background: rgba(12, 12, 250);
+
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.temp{
+  font-size: 5em;
+
+}
+.weather img{
+  display: block;
+  
+}
+.rightSide{
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: rgba(22, 44, 239);
+  box-shadow: 0 8px 32px 0
+  rgba(0, 0, 0);
+  backdrop-filter: blur(10px);
+  
+  border: 1px solid
+  rgba(255, 255, 255, );
+ 
+  padding: 3em 2em;
+
+}
+
+
+
+
+.submit:hover{
+  background: #fff ;
+  
+  color: #000;
+}
+
+.search{
+  background: none;
+  border: none;
+  border-bottom: 1px #ccc solid;
+
+  width: 80%;
+  color: #fff;
+  
+}
+
+.search:focus{
+  outline: none;
+}
+
+
+
+.rightSide ul{
+  padding: 0 01em ;
+  margin: 2em;
+  border-bottom: 1px #ccc solid;
+}
+
+
+.rightSide ul h4{
+  margin: 7% ;
+}
+
+.city{
+  display: block;
+  cursor: pointer;
+}
+.city:hover{
+  color: #fff;
+}
+
+.details li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
