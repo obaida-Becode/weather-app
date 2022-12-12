@@ -16,7 +16,7 @@ let date = document.querySelector(".date")
 // fetch function
 let inpuycity = "brussels" 
 const getWeather = async (city) => {
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=95257612ddf9193a512e1806c727ea6b`)
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=[my secrt key]`)
   const data = await response.json();
   return data
 
